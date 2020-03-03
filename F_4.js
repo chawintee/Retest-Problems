@@ -1,20 +1,14 @@
-let sum = 0 ,ans;
+let sequence,
+goldenratio =  1.61803398875,
+number;
 
-// let ans = (3/2==1) ? "true" : "false";
-
-// console.log(ans)
-
-for(i=1;i<=18954;i++){
-    ans = (i%2==0) ? sum -= i : sum += i;
+while(true){
+    sequence = prompt (`Enter you sequence`)
+    if(isFinite(sequence)){
+        number = (((goldenratio)**sequence)-(1-goldenratio)**sequence)/Math.sqrt(5);
+        console.log(`your sequence is ${sequence} your fibonacci number is ${number.toFixed(0)}`)
+    }else{
+        break;
+    }
 }
 
-// for(i=1;i<=18954;i++){
-//     if (i%2==0){
-//         sum -= i;
-//     } else {
-//         sum += i;
-//     }
-// }
-
-// console.log(sum)
-console.log(ans)

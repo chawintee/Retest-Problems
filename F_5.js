@@ -1,8 +1,20 @@
-let sum = 0;
-for(let i=1;i<=87;i++){
+let sum = 0 ,ans;
 
-        sum += i*(i+1);
-        console.log(`${i}x${i+1}`)
-    
+// let ans = (3/2==1) ? "true" : "false";
+
+// console.log(ans)
+
+for(i=1;i<=18954;i++){
+    ans = (i%2==0) ? sum -= i : sum += i;
 }
-console.log(sum)
+
+// for(i=1;i<=18954;i++){
+//     if (i%2==0){
+//         sum -= i;
+//     } else {
+//         sum += i;
+//     }
+// }
+
+// console.log(sum)
+console.log(ans)
